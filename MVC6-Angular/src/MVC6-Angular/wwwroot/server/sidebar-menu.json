@@ -1,0 +1,20 @@
+[
+    {
+        "text": "Menu Heading",
+        "heading": "true",
+        "translate": "sidebar.heading.HEADER"
+    },
+    {
+        "text": "Menu",
+        "sref": "#",
+        "icon": "icon-folder",
+        "submenu": [
+          {
+            "text": "Produto",
+            "sref": "app.produto",
+            "icon": "fa fa-users"
+          }
+        ],
+        "translate": "sidebar.nav.menu.MENU"
+    }
+]
