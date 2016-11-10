@@ -39,12 +39,27 @@ namespace Angle_MVC6_Angular_Seed.Controllers
 
         #endregion
 
+        /// <summary>
+        ///     Busca Produto - WebApi
+        /// </summary>
+        /// <returns></returns>
         public IActionResult BuscaProduto()
         {
-            var agendas = _produtoRepositorio.Produtos();
+            var produtos = _produtoRepositorio.Produtos();
 
-            return Ok(agendas);
-        }           
+            return Ok(produtos);
+        }
+
+        /// <summary>
+        ///     Busca Produto - MVC
+        /// </summary>
+        /// <returns></returns>
+        public JsonResult BuscaProdutoMVC()
+        {
+            var produtos = _produtoRepositorio.Produtos();
+
+            return Json(produtos);
+        }
 
         public IActionResult Error()
         {

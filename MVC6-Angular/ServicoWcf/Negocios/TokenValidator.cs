@@ -8,6 +8,11 @@ namespace ServicoWcf.Negocios
 {
     public class TokenValidator : ITokenValidator
     {
+        /// <summary>
+        ///     VErifica se o token é valido
+        /// </summary>
+        /// <param name="token"></param>
+        /// <returns></returns>
         public bool IsValid(string token)
         {
             new CredentialsValidator().RemoveExpirados();

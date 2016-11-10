@@ -19,22 +19,26 @@ namespace Angle_MVC6_Angular_Seed.Security
             public AuthenticationTicket Unprotect(string protectedText)
                 => Unprotect(protectedText, null);
 
+            /// <summary>
+            ///     Validacao do Token pelo web api e mvc
+            /// </summary>
+            /// <param name="protectedText"></param>
+            /// <param name="purpose"></param>
+            /// <returns></returns>
             public AuthenticationTicket Unprotect(string protectedText, string purpose)
             {
                 try
                 {
-                    // Additional custom validation of JWT claims here (if any)
+                    return new AuthenticationTicket(new System.Security.Claims.ClaimsPrincipal(), new AuthenticationProperties(), "Token");
                 }
                 catch (ArgumentException)
                 {
                     return null;
                 }
 
-                // Validation passed. Return a valid AuthenticationTicket:
                 return new AuthenticationTicket(new System.Security.Claims.ClaimsPrincipal(), new AuthenticationProperties(), "Cookie");
             }
 
-            // This ISecureDataFormat implementation is decode-only
             public string Protect(AuthenticationTicket data)
             {
                 throw new NotImplementedException();

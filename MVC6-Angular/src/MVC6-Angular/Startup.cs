@@ -1,7 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Angle_MVC6_Angular_Seed.Data;
+using Angle_MVC6_Angular_Seed.Models;
+using Angle_MVC6_Angular_Seed.Models.Repositorio;
+using Angle_MVC6_Angular_Seed.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
@@ -9,10 +9,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using Angle_MVC6_Angular_Seed.Data;
-using Angle_MVC6_Angular_Seed.Models;
-using Angle_MVC6_Angular_Seed.Services;
-using Angle_MVC6_Angular_Seed.Models.Repositorio;
 using static Angle_MVC6_Angular_Seed.Security.AuthorizationLab;
 
 namespace Angle_MVC6_Angular_Seed

@@ -7,6 +7,9 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Angle_MVC6_Angular_Seed.Models
 {    
+    /// <summary>
+    ///     Entidade Base
+    /// </summary>
     public class Entidade    
     {
     	[Key]

@@ -12,6 +12,10 @@ namespace ServicoWcf.Negocios
     {
         internal static Dictionary<string, DateTime> tokens = new Dictionary<string, DateTime>();
 
+        /// <summary>
+        ///     Cria novo token
+        /// </summary>
+        /// <returns></returns>
         public string Build()
         {           
             var token = Guid.NewGuid().ToString();

@@ -10,6 +10,9 @@ namespace ServicoWcf.Negocios
 {
     public class CredentialsValidator : ICredentialsValidator
     {
+        /// <summary>
+        ///     Remove tokens expirados
+        /// </summary>
         public void RemoveExpirados()
         {
             var remover = new List<string>();
