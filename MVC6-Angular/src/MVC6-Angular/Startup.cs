@@ -99,7 +99,7 @@ namespace Angle_MVC6_Angular_Seed
                 AutomaticAuthenticate = true,
                 AutomaticChallenge = true,
                 AuthenticationScheme = "Cookie",
-                CookieName = "access_token",
+                CookieName = "Token",
                 TicketDataFormat = new TokenRequirement()
             });
 

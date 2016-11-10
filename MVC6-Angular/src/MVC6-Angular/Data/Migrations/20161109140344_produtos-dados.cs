@@ -8,7 +8,11 @@ namespace Angle_MVC6_Angular_Seed.Data.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.Sql(@"insert into Produtos (nome,descricao,preco,datainclusao) VALUES ('teste', 'teste desc', 8, getdate());");
+            migrationBuilder.Sql(@"insert into Produtos (nome,descricao,preco,datainclusao) VALUES ('produto teste', 'teste desc', 8, getdate());");
+            migrationBuilder.Sql(@"insert into Produtos (nome,descricao,preco,datainclusao) VALUES ('produto teste 2', 'teste desc 123', 8, getdate());");
+            migrationBuilder.Sql(@"insert into Produtos (nome,descricao,preco,datainclusao) VALUES ('produto teste 3', 'teste desc 321', 7, getdate());");
+            migrationBuilder.Sql(@"insert into Produtos (nome,descricao,preco,datainclusao) VALUES ('produto teste 4', 'teste desc 987', 3, getdate());");
+            migrationBuilder.Sql(@"insert into Produtos (nome,descricao,preco,datainclusao) VALUES ('produto teste 5', 'teste desc 976', 2, getdate());");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
